@@ -18,6 +18,8 @@ pipeline {
             post {
                 always {
                     junit 'target/surefire-reports/*.xml'
+                    echo 'Before Cucumber Reporting'
+                    cucumber fileIncludePattern: '**/cucumber-test-automation/target/cucumber-report.json', sortingMethod: 'ALPHABETICAL'
                 }
             }
         }
