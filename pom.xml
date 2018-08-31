@@ -63,11 +63,6 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>3.19.0</version>
-			</plugin>
 
 			<plugin>
 				<!-- Build an executable JAR -->
